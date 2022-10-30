@@ -1,0 +1,26 @@
+
+version: '3.9'
+
+services:
+ dockerdb:
+   image: mysql:8.0.30
+   restart: always
+   environment:
+     - MYSQL_ROOT_PASSWORD=123
+     - MYSQL_DATABASE=challenge4
+     - MYSQL_PASSWORD=123
+     - MYSQL_USER=sa
+   ports:
+     - 3307:3306
+
+# Criar a imagem rafael/api primeiro, docker build -t rafael/api .
+
+ spring-app:
+    image: rafael/api:latest
+    ports:
+      - 8080:8080
+    environment:
+      - "SPRING_PROFILES_ACTIVE=prod"   
+    depends_on:
+      - dockerdb
+       
