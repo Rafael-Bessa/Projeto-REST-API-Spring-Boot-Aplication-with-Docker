@@ -27,8 +27,10 @@
 - ``MYSQL 8.0.30``    
 - ``Java 17``
 - ``ECLIPSE IDE``
-- ``Paradigma de orientação a objetos``
 - ``Maven``
 - ``JUnit4``
 - ``Mockito``
 - ``Swagger2``
+- ``Jason Web Token (Jwt)``
+- ``Docker``  
+ 
