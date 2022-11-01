@@ -34,3 +34,6 @@
 - ``Jason Web Token (Jwt)``
 - ``Docker``  
  
+## Outros
+
+- ``Me adicione no LinkedIn`` - https://www.linkedin.com/in/rafaelmbessa/
