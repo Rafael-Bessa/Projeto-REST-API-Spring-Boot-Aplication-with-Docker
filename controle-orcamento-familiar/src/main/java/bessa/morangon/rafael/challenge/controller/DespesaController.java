@@ -105,7 +105,7 @@ public class DespesaController {
 	public ResponseEntity<?> despesasMes(@PathVariable int ano, @PathVariable int mes) {
 		
 		Calendar instance = Calendar.getInstance();
-		instance.set(Calendar.MONTH, mes);
+		instance.set(Calendar.MONTH, mes - 1);
 	
 		LocalDate primeiroDia = LocalDate.of(ano, mes, 1);
 		LocalDate ultimoDia = LocalDate.of(ano, mes, instance.getActualMaximum(Calendar.DAY_OF_MONTH));
