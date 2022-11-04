@@ -64,5 +64,37 @@ class ResumoControllerTest {
 		.status()
 		.isOk()).andExpect(MockMvcResultMatchers.content().json(conteudo));
 	}
+	
+	@Test
+	void deveriaDevolverResumoDeDeterminadoAnoMes2() throws Exception {		
+		despesaRepository.deleteAll();
+		receitaRepository.deleteAll();
+		
+		
+		Despesa despesa1 = new Despesa("Supermercado", new BigDecimal("1000.00"), LocalDate.of(2022, 10, 1), Categoria.ALIMENTACAO);
+		Despesa despesa2 = new Despesa("Faculdade", new BigDecimal("500.00"), LocalDate.of(2022, 10, 10), Categoria.EDUCACAO);
+		Despesa despesa3 = new Despesa("Supermercado", new BigDecimal("1000.00"), LocalDate.of(2022, 11, 1), Categoria.ALIMENTACAO);
+		
+		Receita receita1 = new Receita("Salario", new BigDecimal("5000.00"), LocalDate.of(2022, 10, 1));
+		Receita receita2 = new Receita("Aluguel", new BigDecimal("1500.00"), LocalDate.of(2022, 10, 5));
+		Receita receita3 = new Receita("Salario", new BigDecimal("5000.00"), LocalDate.of(2022, 11, 1));
+		
+		despesaRepository.save(despesa1);	
+		despesaRepository.save(despesa2);
+		despesaRepository.save(despesa3);
+		receitaRepository.save(receita1);
+		receitaRepository.save(receita2);
+		receitaRepository.save(receita3);
+			
+		URI uri = new URI("/resumo/2022/11");
+		String conteudo = "{\"totalReceitasMes\":5000.00, \"totalDespesasMes\":1000.00, \"saldoFinal\":4000.00, \"despesasPorCategoria\": {\"ALIMENTACAO\":1000.00}}";
+		
+		mockMvc
+		.perform(MockMvcRequestBuilders
+		.get(uri))
+		.andExpect(MockMvcResultMatchers
+		.status()
+		.isOk()).andExpect(MockMvcResultMatchers.content().json(conteudo));
+	}
 
 }
