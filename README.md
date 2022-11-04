@@ -34,6 +34,9 @@
 - ``Jason Web Token (Jwt)``
 - ``Docker``  
  
+## Repositório DockerHub para utilizar a imagem do meu projeto
+  [![Docker Hub Repo](https://img.shields.io/docker/pulls/rafaelmbessa/rafaelbessaapi.svg)](https://hub.docker.com/repository/docker/rafaelmbessa/rafaelbessaapi)
+  
 ## Outros
 
 - ``Me adicione no LinkedIn`` - https://www.linkedin.com/in/rafaelmbessa/
