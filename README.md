@@ -31,7 +31,7 @@
 - ``JUnit4``
 - ``Mockito``
 - ``Swagger2``
-- ``Jason Web Token (Jwt)``
+- ``Json Web Token (Jwt)``
 - ``Docker``  
  
 ## Repositório DockerHub para utilizar a imagem do meu projeto
