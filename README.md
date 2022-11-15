@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <p align="center">REST-API-Spring-Boot-Aplication-with-Docker</p>
+  <p align="center">REST API</p>
 </h1
 
 ![rest](https://user-images.githubusercontent.com/104053775/198865741-d76b7df2-613c-4fbb-9d0e-63d4deff540a.jpg)
