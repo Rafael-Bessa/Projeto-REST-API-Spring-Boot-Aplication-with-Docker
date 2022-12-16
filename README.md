@@ -36,7 +36,7 @@
 - ``Postman``
  
 ## Repositório DockerHub para utilizar a imagem do meu projeto
-  [![Docker Hub Repo](https://img.shields.io/docker/pulls/rafaelmbessa/rafaelbessaapi.svg)](https://hub.docker.com/repository/docker/rafaelmbessa/rafaelbessaapi)
+  - [![Docker Hub Repo](https://img.shields.io/docker/pulls/rafaelmbessa/rafaelbessaapi.svg)](https://hub.docker.com/repository/docker/rafaelmbessa/rafaelbessaapi)
   
 ## Outros
 
