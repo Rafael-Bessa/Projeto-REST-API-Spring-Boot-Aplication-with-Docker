@@ -11,7 +11,7 @@
 
 - ``/register (Cadastrar usuário para começar a usar a api)``
 - ``/auth (Fazer a autentificação do usuário e receber um web token para poder fazer as próximas requisições http)``
-- ``/receitas      /receitar/{id}        /receitas?descricao={valor}       /receitas/{ano}/{mes}``
+- ``/receitas      /receitas/{id}        /receitas?descricao={valor}       /receitas/{ano}/{mes}``
 - ``/despesas      /despesas/{id}        /despesas?descricao={valor}       /despesas/{ano}/{mes}  ``
 - ``/resumo/{ano}/{mes}``
 
